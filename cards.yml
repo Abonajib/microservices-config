@@ -1,0 +1,18 @@
+myapp:
+  name: cards
+  version: 1.0
+  build:
+    date: '2022-01-01'
+    time: '00:00:00'
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to najib cards related local APIs "
+  contactDetails:
+    name: "mohamed najib - senior software developer"
+    email: "mohamednajib78@gmail.com"
+  onCallSupport:
+    - "(555) 555-1234"
+    - "(555) 523-1345"

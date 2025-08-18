@@ -1,0 +1,13 @@
+
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to najib accounts related prod APIs "
+  contactDetails:
+    name: "mohamed najib - senior software developer"
+    email: "mohamednajib78@gmail.com"
+  onCallSupport:
+    - "(555) 555-1234"
+    - "(555) 523-1345"
