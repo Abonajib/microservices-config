@@ -4,7 +4,7 @@ build:
   version: "3.0"
 
 accounts:
-  message: "Welcome to najib accounts related development APIs "
+  message: "Welcome to najib accounts related development(try refresh end point) APIs "
   contactDetails:
     name: "mohamed mamdouh - senior software developer"
     email: "mohamednajib78@gmail.com"

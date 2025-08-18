@@ -9,7 +9,7 @@ build:
   version: "3.0"
 
 cards:
-  message: "Welcome to najib cards related development APIs (from git)"
+  message: "Welcome to najib cards related development(try refresh end point) APIs (from git)"
   contactDetails:
     name: "mohamed najib - senior software developer"
     email: "{cipher}6127e796f47432d11c0aefc59b6bfa1bcca04edafde3d2454c1e4dc18c4abd9e73b810667e9359929ecb3c1b4a601f60"
