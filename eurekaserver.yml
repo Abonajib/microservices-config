@@ -1,11 +1,15 @@
 server:
-  port: 8070
+  port: 8070   # 👈 Eureka هيشتغل على 8070 جوا الكونتينر
+
+spring:
+  application:
+    name: eureka-service   # اسم الخدمة في Spring Cloud
 
 eureka:
   instance:
-    hostname: eureka-service
+    hostname: eureka-service   # 👈 مهم: ده اسم الخدمة في docker-compose مش localhost
   client:
-    fetchRegistry: false
-    registerWithEureka: false
-    serviceUrl:
+    register-with-eureka: false   # السيرفر مايسجلش نفسه
+    fetch-registry: false         # السيرفر مايحاولش يجيب registry من نفسه
+    service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
