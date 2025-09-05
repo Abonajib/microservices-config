@@ -10,6 +10,7 @@ eureka:                  # إعدادات خاصة بالتعامل مع Eureka
     registerWithEureka: true  # true = سجل نفسك في Eureka (عشان الخدمات التانية تكتشفك)
     fetchRegistry: true       # true = هات نسخة من registry (عشان تعرف باقي الخدمات)
     serviceUrl:               # مكان الـ Eureka Server اللي هنسجل فيه
-      defaultZone: "http://eureka-service:8070/eureka/"
+      #defaultZone: "http://eureka-service:8070/eureka/"
+      defaultZone: "http://localhost:8070/eureka/"
                               # عنوان Eureka Server (هنا شغال على جهازك المحلي على بورت 8070)
                               # "/eureka/" هو الـ context path الافتراضي بتاع السيرفر
