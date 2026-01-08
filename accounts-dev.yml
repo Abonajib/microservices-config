@@ -3,8 +3,8 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/accountsdb
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: root
+    username: {cipher}6294941ca2e8c7ecd473862ac82a13149d38cfeeb06eae5bc49ad7494a57c2ea
+    password: {cipher}6294941ca2e8c7ecd473862ac82a13149d38cfeeb06eae5bc49ad7494a57c2ea
   jpa:
     hibernate:
       ddl-auto: update
