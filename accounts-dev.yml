@@ -3,8 +3,8 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/accountsdb
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: "{cipher}502e9645e859002d6e508b321c502382ea40afe0b8c57a1757e3a35c5c07d704"
-    password: "{cipher}502e9645e859002d6e508b321c502382ea40afe0b8c57a1757e3a35c5c07d704"
+    username: "{cipher}a636753d35283c7d593e06a749088a150a7212d25f41d0e4784050e09a6770b7"
+    password: "{cipher}a636753d35283c7d593e06a749088a150a7212d25f41d0e4784050e09a6770b7"
   jpa:
     hibernate:
       ddl-auto: update
