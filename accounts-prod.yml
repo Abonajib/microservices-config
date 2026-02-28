@@ -1,13 +1,31 @@
+spring:
+  # 1. إعدادات قاعدة البيانات (الأساس MySQL)
+  datasource:
+    url: jdbc:mysql://localhost:3306/accountsdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
 
+  # 2. إعدادات JPA و Hibernate
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      # نستخدم validate لضمان تطابق الكود مع السكيما اللي Flyway هيكريتها
+      ddl-auto: update
+    show-sql: true
 
-build:
-  version: "3.0"
+  # 3. إعدادات Flyway (Git الداتابيز)
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
 
-accounts:
-  message: "Welcome to najib accounts related prod APIs "
-  contactDetails:
-    name: "mohamed najib - senior software developer"
-    email: "mohamednajib78@gmail.com"
-  onCallSupport:
-    - "(555) 555-1234"
-    - "(555) 523-1345"
+  # 4. إيقاف H2 تماماً لعدم حدوث تضارب في الدوكر
+  h2:
+    console:
+      enabled: false
+
+# إعدادات الـ Logging عشان تشوف تفاصيل الربط في الـ Console
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.flywaydb: DEBUG
