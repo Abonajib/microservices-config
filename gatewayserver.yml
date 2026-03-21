@@ -1,10 +1,10 @@
 server:                  # إعدادات خاصة بالسيرفر نفسه
   port: 8072             # رقم البورت اللي هتشتغل عليه الخدمة (بدل 8080 الديفولت)
 
-eureka:                  # إعدادات خاصة بالتعامل مع Eureka
-  instance:              # إزاي الخدمة هتسجل نفسها جوه Eureka
-    preferIpAddress: true  # true = سجل نفسك بالـ IP بدل الـ hostname
-                          # ده بيمنع مشاكل DNS (زي UnknownHostException)
+# eureka:                  # إعدادات خاصة بالتعامل مع Eureka
+#   instance:              # إزاي الخدمة هتسجل نفسها جوه Eureka
+#     preferIpAddress: true  # true = سجل نفسك بالـ IP بدل الـ hostname
+#                           # ده بيمنع مشاكل DNS (زي UnknownHostException)
 
   # client:                # إعدادات الـ Eureka Client
   #   registerWithEureka: true  # true = سجل نفسك في Eureka (عشان الخدمات التانية تكتشفك)
